@@ -89,12 +89,7 @@
 % defines one's phone
 % usage: \phone{<phone>}
 \newcommand{\phone}[1]{\faPhone\ {#1}}
-% defines one's linkedin
-% usage: \linkedin{<linkedin>}
-\newcommand{\linkedin}[2][]{\faLinkedin\ 
-  \ifthenelse{\isempty{#1}}%
-    {\href{#2}{#2}}
-    {\href{#2}{#1}}}
+\newcommand{\address}[1]{\faMapMarker\ {#1}}
 % defines one's GitHub
 % usage: \github{<github>}
 \newcommand{\github}[2][]{\faGithub\ 
@@ -115,7 +110,7 @@
 }
 
 \newcommand{\basicInfo}[1]{
-  \centerline{\sffamily\large{#1}}
+  \centerline{\sffamily\normalsize{#1}}
   \vspace{1.5ex}
 }
 
